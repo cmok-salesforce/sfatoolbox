@@ -2,6 +2,8 @@
   "name": "sfatoolbox",
   "private": true,
   "scripts": {
+    "lmd": "node imports/playground/jsforce/listmetadata.js",
+    "ant": "cd ~/Dropbox/automation/bash_scripts/sfdcant/",
     "start": "meteor run",
     "test": "meteor test --once --driver-package meteortesting:mocha",
     "test-app": "TEST_WATCH=1 meteor test --full-app --driver-package meteortesting:mocha",
@@ -9,8 +11,25 @@
   },
   "dependencies": {
     "@babel/runtime": "7.0.0-beta.55",
-    "babel-eslint": "^10.0.1",
-    "meteor-node-stubs": "^0.4.1"
+    "babel-runtime": "^6.26.0",
+    "browserfs": "^1.4.3",
+    "classnames": "^2.2.6",
+    "commander": "^2.18.0",
+    "cordova-plugin-splashscreen": "^5.0.2",
+    "cordova-plugin-statusbar": "^2.4.2",
+    "dotenv": "^6.0.0",
+    "jsforce": "^1.9.1",
+    "meteor-node-stubs": "^0.4.1",
+    "numeral": "^2.0.6",
+    "progress": "^2.0.0",
+    "prop-types": "^15.6.2",
+    "properties-reader": "0.0.16",
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2",
+    "react-flip-move": "^3.0.2",
+    "react-router": "^4.3.1",
+    "react-router-dom": "^4.3.1",
+    "yargs": "^12.0.2"
   },
   "meteor": {
     "mainModule": {
