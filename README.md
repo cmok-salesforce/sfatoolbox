@@ -18,6 +18,7 @@ This is my playground area discovering : meteor & react.
 * Create meteor project in current folder: meteor create
   ```
   meteor create --minimal sfatoolbox
+  rm -Rf .meteor/local
   ```
 
 # Installing Meteor
@@ -47,6 +48,17 @@ This is my playground area discovering : meteor & react.
 * meteor add accounts-password
 * meteor add pauldowman:dotenv
 * meteor add react-meteor-data
+<!--- Causing Uncaught Error: Target container is not a DOM element. on client side, then add static-html -->
+* meteor remove blaze-html-templates 
+* meteor add static-html
+<!-- if nourharidy:ssl :  Uncaught ReferenceError: Template is not defined -->
+* meteor remove nourharidy:ssl
+
+
+## Upate all package to latest version 
+```
+meteor update --all-packages
+```
 
 ## IOS Mobile Support  ---> On Mac Only
 * meteor add-platform ios
@@ -122,3 +134,9 @@ require('meteor/accounts-base').Accounts.logout()
 # PHP Server
 php -S localhost:8885
 alias server='open http://localhost:8000 & python -m SimpleHTTPServer'  
+
+# Playground area
+## Ubuntu server
+## Reference:
+* [Using SSL with Express 4 and Node.js](https://aghassi.github.io/ssl-using-express-4/)
+* [Modular web applications with Node.js and Express](https://vimeo.com/56166857)

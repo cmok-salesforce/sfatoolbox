@@ -1,11 +1,12 @@
 require('dotenv').config({ path: `${process.env.PWD}/.env` });
 
 import { Meteor } from "meteor/meteor";
-import { onPageLoad } from "meteor/server-render";
+// import { onPageLoad } from "meteor/server-render";
 
+/*
 if (Meteor.isServer) {
   SSL(process.env.METEOR_PRIVATE_KEY_FULLPATH_LOCATION, process.env.METEOR_PUBLIC_KEY_FULLPATH_LOCATION, process.env.METEOR_HTTPS_PORT);
-}
+}*/
 
 function handleTodosApp() {
   //loaded globally
@@ -19,13 +20,14 @@ Meteor.startup(() => {
   // Code to run on server startup.
   console.log(`Greetings from ${module.id}!`);
   console.log('*** SERVER: Meteor.startup ' + new Date());
-  handleTodosApp();  
+  //handleTodosApp();  
 });
 
+/* 
 onPageLoad(sink => {
   // Code to run on every request.
   sink.renderIntoElementById(
     "server-render-target",
     `Server time: ${new Date}`
   );
-});
+}); */

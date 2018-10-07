@@ -4,3 +4,8 @@ public/js/
 .cache
 .vscode
 .env
+cert.pem
+key.pem
+config.js
+build.properties
+out.log

@@ -4,17 +4,41 @@
 # 'meteor add' and 'meteor remove' will edit this file for you,
 # but you can also edit it by hand.
 
-meteor@1.9.0                  # Shared foundation for all Meteor packages
-static-html             # Define static page content in .html files
+meteor@1.8.0                  # Shared foundation for all Meteor packages
+mobile-experience@1.0.5       # Packages for a great mobile UX
+mongo@1.5.0                   # The database Meteor supports right now
+reactive-var@1.0.11            # Reactive variable for tracker
+tracker@1.2.0                 # Meteor's client-side reactive programming library
+
 standard-minifier-css@1.4.1   # CSS minifier run for production mode
 standard-minifier-js@2.3.4    # JS minifier run for production mode
 es5-shim@4.8.0                # ECMAScript 5 compatibility for older browsers
 ecmascript@0.11.1              # Enable ECMAScript2015+ syntax in app code
 shell-server@0.3.1            # Server-side component of the `meteor shell` command
-webapp@1.6.0                  # Serves a Meteor app over HTTP
-server-render@0.3.1           # Support for server-side rendering
-nourharidy:ssl
-accounts-base
+
+# development usage ONLY
+# autopublish@1.0.7             # Publish all data to the clients (for prototyping)
+# insecure@1.0.7                # Allow all DB writes from clients (for prototyping)
+
+# Intermediate meteor
+erasaur:meteor-lodash
+stolinski:stylus-multi
+fortawesome:fontawesome
+spiderable
+fastclick
+raix:handlebar-helpers
+aldeed:collection2
+aldeed:autoform
+accounts-ui
 accounts-password
-pauldowman:dotenv
+matb33:bootstrap-glyphicons
+zimme:active-route
+meteortoys:allthings
+
+check
+
+fourseven:scss
 react-meteor-data
+
+static-html
+react-template-helper
